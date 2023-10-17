@@ -10,4 +10,8 @@
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_37(void)
-#endif
+int print_char(va_list args)		
+		
+		
+
+endif 
