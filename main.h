@@ -15,11 +15,18 @@ int _printf(const char *format, ...);
 
 int print_decim(va_list args);
 int print_int(va_list args);
+
+int print_octal(va_list args);
+int print_hex(va_list args);
+int print_bighex(va_list args);
+int print_uns(va_list args);
+
+
 =======
 int print_37(void)
-<<<<<<< HEAD		
-		
-		
+<<<<<<< HEAD
+
+
 =======
 >>>>>>> 70f8a9b88e7ff7d124a203037d4584abcf841213
 #endif
