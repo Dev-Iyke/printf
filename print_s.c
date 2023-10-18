@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_string - function to print string
+ * print_strings - function to print string
  * @args: arguments
  * Return: usually 1
  */
@@ -11,7 +11,7 @@ int print_strings(va_list args)
 	char *str;
 	int i;
 	int len;
-	
+
 	str = va_arg(args, char *);
 	if (str == NULL)
 	{
