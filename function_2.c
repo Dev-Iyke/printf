@@ -1,25 +1,3 @@
-
-
-Code
-Issues
-Pull requests
-More
-Commit
-Team work
- master
-@Jemal-Tilahun
-Jemal-Tilahun committed on Oct 16, 2022
-0 parents
-commit 25bd9f7
-Showing 13 changed files with 1,246 additions and 0 deletions.
- 2 changes: 2 additions & 0 deletions2  
-README.md
-@@ -0,0 +1,2 @@
-0x11. C - printf team project
-
- 66 changes: 66 additions & 0 deletions66  
-_printf.c
-@@ -0,0 +1,66 @@
 #include "main.h"
 
 void print_buffer(char buffer[], int *buff_ind);
@@ -86,9 +64,8 @@ void print_buffer(char buffer[], int *buff_ind)
 
 	*buff_ind = 0;
 }
- 188 changes: 188 additions & 0 deletions188  
-functions.c
-@@ -0,0 +1,188 @@
+ 
+
 #include "main.h"
 
 /************************* PRINT CHAR *************************/
@@ -277,9 +254,7 @@ int print_binary(va_list types, char buffer[],
 	}
 	return (count);
 }
- 161 changes: 161 additions & 0 deletions161  
-functions1.c
-@@ -0,0 +1,161 @@
+ 
 #include "main.h"
 
 /************************* PRINT UNSIGNED NUMBER *************************/
@@ -425,6 +400,7 @@ int print_hexa(va_list types, char map_to[], char buffer[],
 
 	buffer[BUFF_SIZE - 1] = '\0';
 
+
 	while (num > 0)
 	{
 		buffer[i--] = map_to[num % 16];
@@ -439,11 +415,8 @@ int print_hexa(va_list types, char map_to[], char buffer[],
 
 	i++;
 
-	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
-}
- 188 changes: 188 additions & 0 deletions188  
-functions2.c
-@@ -0,0 +1,188 @@
+	return (write_unsgnd(0, i, buffer, flags, width, precision, size))
+
 #include "main.h"
 
 /****************** PRINT POINTER ******************/
